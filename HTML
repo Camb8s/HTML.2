@@ -349,13 +349,14 @@ Click me to display Date and Time.</button>
 <button type="button" onclick="myFunction()">Click Me!</button>
 <p>Here, a Javascript change the value of the src (source) attribute of an image.</p>
 <script>
-    Function bentley(sw) {
+    function bentley(sw) {
         var pic;
         if (sw == 0){
             pic = "https://www.bentleymedia.com/image/18cc36d3-3b82-485a-8607-23f9a8e39462?mode=crop&anchor=middlecenter&bgcolor=Transparent&borderWidth=0&crop=0%2c0%2c0%2c0&height=433&width=1300"
         } else {
             pic = "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/newscms/2019_06/2746941/190208-stock-money-fanned-out-ew-317p.jpg"
         }
+        document.getElementById('myImage').src = pic;
     }
 </script>
 </body>
